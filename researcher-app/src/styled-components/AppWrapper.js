@@ -2,16 +2,19 @@ import styled from "styled-components";
 
 // App wrapper styles
 
-const AppWrapper = styled.div`
+const AppWrapper = styled.div `
 
 	
-	margin: 20px;
-
+	padding: 20px; //changed margin to padding
+	//min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
+	min-height: 100vh;
 
+
+	
 `;
 
 

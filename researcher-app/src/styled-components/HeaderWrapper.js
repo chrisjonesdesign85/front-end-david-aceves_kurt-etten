@@ -5,8 +5,8 @@ import styled from "styled-components";
 const HeaderWrapper = styled.div `
 
 	width: 100%;
-	background-image: linear-gradient(#AC4D00, #5f2b00);
-	// border-bottom: 1px solid #CCC;
+	background-image: linear-gradient(180deg, #AC4D00 0%, #5f2b00 100%, #8A3E00);
+	border-bottom: 1px solid #8A3E00;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -15,9 +15,10 @@ const HeaderWrapper = styled.div `
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+
 	webkit-box-shadow: 0 8px 6px -6px black;
-	   -moz-box-shadow: 0 8px 6px -6px black;
-			box-shadow: 0 2px 6px 2px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	box-shadow: 0 2px 6px 2px black;
 			
 	.header-content {
 		max-width: 1024px;
@@ -33,7 +34,6 @@ const HeaderWrapper = styled.div `
 	.left {
 		width: 34%;
 		font-size: 1.8rem;
-
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
@@ -42,7 +42,6 @@ const HeaderWrapper = styled.div `
 
 	.right {
 		width: 34%;
-
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
@@ -84,9 +83,22 @@ const HeaderWrapper = styled.div `
 		cursor: pointer;
 
 		margin: 0 10px;
+		webkit-box-shadow: 0 8px 6px -6px black;
+		box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.35);
 	}
 
+
+
+	a:hover {
+		background-image: linear-gradient(180deg, #AC4D00 0%, #5f2b00 100%, #8A3E00);
+		background-color: #AC4D00;
+		border-bottom: 2px solid #5f2b00;
+		border-left: 2px solid  #AC4D00;
+		border-top: 1px solid #DCA67B; 
+		border-right: 1px solid #DCA67B;
+	}
 `;
+
 
 
 export default HeaderWrapper;
