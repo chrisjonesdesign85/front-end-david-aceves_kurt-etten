@@ -14,6 +14,16 @@ const RegisterWrapper = styled.div`
 
 
 	form {
+        background: #dca67b; /* Old browsers */
+        background: -moz-linear-gradient(-45deg, #dca67b 0%, #ac4d00 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #dca67b 0%,#ac4d00 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #dca67b 0%,#ac4d00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dca67b', endColorstr='#ac4d00',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+        -webkit-box-shadow: 1px 10px 101px -6px rgba(0,0,0,0.86);
+        -moz-box-shadow: 1px 10px 101px -6px rgba(0,0,0,0.86);
+        box-shadow: 1px 10px 101px -6px rgba(0,0,0,0.86);
+
 		margin-top: 20px;
 		padding: 10px;
 
@@ -22,7 +32,7 @@ const RegisterWrapper = styled.div`
 		align-items: center;
 
 		font-size: 1.8rem;
-		border: 1px solid black;
+		border-radius: 5px;
 
 		div {
 			display: flex;
@@ -40,6 +50,7 @@ const RegisterWrapper = styled.div`
 				height: 30px;
 				margin: 10px;
 				font-size: 1.6rem;
+                border-radius: 5px;
 			}
 
 		}
@@ -47,7 +58,15 @@ const RegisterWrapper = styled.div`
 		button {
 			font-size: 1.6rem;
 			margin: 10px;
+            border-radius: 5px;
 		}
+
+        button:hover{
+            background-color: #dca67b;
+        }
+        button:active {
+            background-color: #AC4D00;
+        }
 
 	}
 
